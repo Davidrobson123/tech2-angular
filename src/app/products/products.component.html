@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="main" *ngFor="let product of results?.Items">
+    <div class="product">
+        <img class="image" src="../../assets/image1.jpg" alt="product"/>
+        <div class="product-details">
+            <div class="buy">Add to Basket</div>
+            <div class="product-name">{{product.name}}</div>
+            <div class="product-brand"><span>Brand:</span>{{product.brand}}</div>
+            <select>
+                <option disabled selected required>Select size</option>
+            </select>
+            <div class="product-description"><span>Description:</span><br /> {{product.description}}</div>
+            <div class="product-id"><span>Product ID:</span> {{product.productid}}</div>
+        </div>
+    </div>
+</div>
+

@@ -1,1 +1,223 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Leighton;
+  src: url(./assets/fonts/leighton.ttf);
+}
+
+body {
+  font-family: leighton;
+  margin: 0;
+}
+
+.App-header {
+  text-align: center;
+}
+
+input, select {
+  text-align: left;
+  margin-top: 10px;
+  padding: 5px 5px 5px 5px;
+  font-size: 14px;
+  border: 2px solid grey;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select {
+  padding-right: 20px;
+}
+
+.select-drop {
+  font-size: 18px;
+  margin-left: -20px;
+}
+
+.basket {
+  padding: 10px;
+  background-color: firebrick;
+  font-size: 22px;
+  border-radius: 5px;
+  color: #fff;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.product:last-child {
+  margin-bottom: 150px;
+}
+
+.featured-bar {
+  margin: 20px;
+  font-size: 40px;
+
+  .product {
+    border: 5px solid black;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.App {
+  font-family: Leighton, sans-serif;
+  text-align: center;
+  width: 100vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  align-self: center;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 20px;
+  text-align: left;
+
+  .buy {
+    background-color: firebrick;
+    float: right;
+    color: #fff;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  select {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .image {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .product-details {
+    padding: 5px;
+    flex: 2;
+
+    .product-name {
+      font-size: 22px;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .product-brand, .product-description, .product-id {
+      span {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+
+    div {
+      padding: 10px;
+    }
+  }
+}
+
+.App-logo {
+  width: 50vw;
+  height: 12vw;
+}
+
+.main-header {
+  display: inline-flex;
+
+  span {
+    display: none;
+  }
+}
+
+header {
+  padding: 10px;
+  font-size: 3.8em;
+  color: white;
+  font-weight: bold;
+  background-color: #333;
+  margin-bottom: 20px;
+}
+
+.App-footer {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+}
+
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 0.2em;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  .menu {
+    margin-top: 40px;
+  }
+
+  .topnav a {
+    font-size: 0.3em;
+  }
+
+  .product {
+    width: 50vw;
+    flex-direction: row;
+
+    .image {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  .App-logo {
+    width: 400px;
+    height: 100px;
+  }
+
+  .main-header {
+    span {
+      display: inline-flex;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    span:first-of-type {
+      margin-top: 18px;
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+}
+
