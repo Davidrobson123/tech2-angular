@@ -44,19 +44,19 @@ select {
   }
 }
 
-.product:last-child {
-  margin-bottom: 150px;
-}
-
 .featured-bar {
   margin: 20px;
   font-size: 40px;
+  text-align: center;
 
   .product {
     border: 5px solid black;
     font-size: 16px;
-    margin-bottom: 0;
   }
+}
+
+.product:last-of-type {
+  margin-bottom: 60px;
 }
 
 .App {
